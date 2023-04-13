@@ -5,3 +5,6 @@ CitiesManager.Infrastructure/bin/
 CitiesManager.Infrastructure/obj/
 CitiesManager.WebAPI/bin/
 CitiesManager.WebAPI/obj/
+CitiesManager.WebAPI/ClientApp/CitiesAngularApp/node_modules/
+CitiesManager.WebAPI/ClientApp/CitiesAngularApp/.angular/cache/
+CitiesManager.WebAPI/ClientApp/CitiesAngularApp/.vscode/
