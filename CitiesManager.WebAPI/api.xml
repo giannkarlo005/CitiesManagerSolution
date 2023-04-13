@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitiesManager.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:CitiesManager.WebAPI.Controllers.CustomControllerBase">
+            <summary>
+            This class is being inherited by Controller classes that needs the Route and ApiController attributes
+            </summary>
+        </member>
+        <member name="T:CitiesManager.WebAPI.Controllers.v1.AccountController">
+            <summary>
+            This controller is reponsible for User Accounts
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.#ctor(Microsoft.AspNetCore.Identity.UserManager{CitiesManager.Core.Identity.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{CitiesManager.Core.Identity.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{CitiesManager.Core.Identity.ApplicationRole},CitiesManager.Core.ServiceContracts.IJwtService)">
+            <summary>
+            Initializes the UserManager, SignInManager, RoleManager
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.RegisterUser(CitiesManager.Core.DTO.RegisterDTO)">
+            <summary>
+            Registers the User
+            </summary>
+            <param name="registerDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.IsEmailAlreadyRegistered(System.String)">
+            <summary>
+            Check if email put by the user already exists in the database
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.LoginUser(CitiesManager.Core.DTO.LoginDTO)">
+            <summary>
+            Logs in the user
+            </summary>
+            <param name="loginDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.AccountController.LogoutUser">
+            <summary>
+            Logs out the user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CitiesManager.WebAPI.Controllers.v1.CitiesController">
+            <summary>
+            Version 1 of Cities Controller
+            </summary>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.#ctor(CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext)">
+            <summary>
+            Initialize the ApplicationDbContext
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities">
+            <summary>
+            To Get list of cities (including city ID and city Name) frrom 'cities' table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCity(System.Guid)">
+            <summary>
+            Fetches the city using the city ID
+            </summary>
+            <param name="cityID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PutCity(System.Guid,CitiesManager.Core.Models.City)">
+            <summary>
+            Updates the city name
+            </summary>
+            <param name="cityID"></param>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PostCity(CitiesManager.Core.Models.City)">
+            <summary>
+            Adds city to database
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.DeleteCity(System.Guid)">
+            <summary>
+            Deletes City from the database using the city ID
+            </summary>
+            <param name="cityID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v2.CitiesController.GetCities">
+            <summary>
+            To Get list of cities (including city ID and city Name) frrom 'cities' table
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

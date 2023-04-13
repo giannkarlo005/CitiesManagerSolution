@@ -1,0 +1,7 @@
+.vs/
+CitiesManager.Core/bin/
+CitiesManager.Core/obj/
+CitiesManager.Infrastructure/bin/
+CitiesManager.Infrastructure/obj/
+CitiesManager.WebAPI/bin/
+CitiesManager.WebAPI/obj/
