@@ -38,6 +38,7 @@ export class LoginComponent {
     this.accountService.LoginUser(this.loginForm.value).subscribe({
       next: (response: any) => {
         localStorage["token"] = response.token;
+        localStorage["refreshToken"] = response.refreshToken;
 
         this.accountService.currentUsername = response.email;
         this.isLoginFormSubmitted = false;

@@ -56,6 +56,7 @@ export class RegisterComponent {
     this.accountService.RegisterUser(this.registerForm.value).subscribe({
       next: (response: any) => {
         localStorage["token"] = response.token;
+        localStorage["refreshToken"] = response.refreshToken;
 
         this.isRegisterFormSubmitted = false;
         this.router.navigate(['/cities']);
